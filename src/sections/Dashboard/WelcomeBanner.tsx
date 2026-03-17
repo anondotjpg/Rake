@@ -79,7 +79,7 @@ const WelcomeContent = styled.div`
 
   h1 {
     font-size: 1.75rem;
-    margin: 0 0 4px 0;
+    margin: 0 0 7px 0;
     color: #ffffff;
   }
 
