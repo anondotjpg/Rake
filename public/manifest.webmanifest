@@ -1,6 +1,6 @@
 {
-	"name": "Gamba Play",
-	"short_name": "Gamba",
+	"name": "Rake Play",
+	"short_name": "Rake",
 	"start_url": "/",
 	"display": "standalone",
 	"background_color": "#000000",

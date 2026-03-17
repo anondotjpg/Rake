@@ -6,7 +6,7 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.ma
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  'V2grJiwjs25iJYqumbHyKo5MTK7SFqZSdmoRaj8QWb9',
+  '3efJ9UNNpgUiocHZEE8X2hiWw5BhF3GYbaDLUaHjbsKW',
 )
 
 // Gamba explorer URL - Appears in RecentPlays
@@ -41,16 +41,10 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  * For private pools, add the creator of the Liquidity Pool as a second argument
  */
 export const POOLS = [
-  // Fake token:
-  lp(FAKE_TOKEN_MINT),
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
-  // Wormhole:
-  lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
-  //private pool example (mint + authority)
-  lp('So11111111111111111111111111111111111111112', 'Fki4Yah4ZXvFmDUw8WspxRAEmfERPth7PPEwPYt3bior'),
 ]
 
 // The default token to be selected
@@ -109,7 +103,7 @@ export const TOKEN_METADATA_FETCHER = (
   }
 )()
 
-export const ENABLE_LEADERBOARD = true 
+export const ENABLE_LEADERBOARD = false 
 export const ENABLE_TROLLBOX = false // Requires setup in vercel (check tutorial in discord)
 
 /** If true, the featured game is fully playable inline on the dashboard */

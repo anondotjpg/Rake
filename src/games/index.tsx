@@ -13,7 +13,7 @@ export const GAMES: ExtendedGameBundle[] = [
   {
     id: 'dice',
     meta: {
-      background: '#ff6490',
+      background: '#111111',
       name: 'Dice',
       image: '/games/dice.png',
       description: `
@@ -25,7 +25,7 @@ export const GAMES: ExtendedGameBundle[] = [
   {
     id: 'slots',
     meta: {
-      background: '#5465ff',
+      background: '#111111',
       name: 'Slots',
       image: '/games/slots.png',
       description: `
@@ -37,7 +37,7 @@ export const GAMES: ExtendedGameBundle[] = [
   {
     id: 'flip',
     meta: {
-      background: '#ffe694',
+      background: '#111111',
       name: 'Flip',
       image: '/games/flip.png',
       description: `
@@ -49,7 +49,7 @@ export const GAMES: ExtendedGameBundle[] = [
   {
     id: 'hilo',
     meta: {
-      background: '#ff4f4f',
+      background: '#111111',
       name: 'HiLo',
       image: '/games/hilo.png',
       description: `
@@ -62,7 +62,7 @@ export const GAMES: ExtendedGameBundle[] = [
   {
     id: 'mines',
     meta: {
-      background: '#8376ff',
+      background: '#111111',
       name: 'Mines',
       image: '/games/mines.png',
       description: `
@@ -74,7 +74,7 @@ export const GAMES: ExtendedGameBundle[] = [
   {
     id: 'roulette',
     meta: {
-      background: '#1de87e',
+      background: '#111111',
       name: 'Roulette',
       image: '/games/roulette.png',
       description: `
@@ -86,7 +86,7 @@ export const GAMES: ExtendedGameBundle[] = [
   {
     id: 'plinko',
     meta: {
-      background: '#7272ff',
+      background: '#111111',
       name: 'Plinko',
       image: '/games/plinko.png',
       description: `
@@ -98,7 +98,7 @@ export const GAMES: ExtendedGameBundle[] = [
   {
     id: 'crash',
     meta: {
-      background: '#de95e8',
+      background: '#111111',
       name: 'Crash',
       image: '/games/crash.png',
       description: `
@@ -110,7 +110,7 @@ export const GAMES: ExtendedGameBundle[] = [
   {
     id: 'blackjack',
     meta: {
-      background: '#084700',
+      background: '#111111',
       name: 'BlackJack',
       image: '/games/blackjack.png',
       description: `
@@ -118,44 +118,5 @@ export const GAMES: ExtendedGameBundle[] = [
       `,
     },
     app: React.lazy(() => import('./BlackJack')),
-  },
-  {
-    id: 'jackpot',
-    meta: {
-      background: '#38acc9ff',
-      name: 'JackPot',
-      image: '/games/jackpot.png',
-      description: `
-        A simple jackpot multiplier game where you spin to win big.
-      `,
-      tag: 'Multiplayer',  
-    },
-    app: React.lazy(() => import('./Jackpot')),
-  },
-  {
-    id: 'plinkorace',
-    meta: {
-      background: '#62cc34ff',
-      name: 'PlinkoRace',
-      image: '/games/plinkorace.png',
-      description: `
-        multiplayer plinko game 
-      `,
-      tag: 'Multiplayer', 
-    },
-    app: React.lazy(() => import('./PlinkoRace')),
-  },
-  {
-    id: 'pvpflip',
-    meta: {
-      background: '#222a59',
-      name: 'PvpFlip',
-      image: '/games/pvpflip.png',
-      description: `
-        Create or join a 1v1 coin flip. Fixed two players, winner takes all.
-      `,
-      tag: 'Multiplayer',
-    },
-    app: React.lazy(() => import('./PvpFlip')),
   },
 ];

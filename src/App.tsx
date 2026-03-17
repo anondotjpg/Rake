@@ -84,9 +84,6 @@ export default function App() {
           {/* Dedicated game pages */}
           <Route path="/:gameId"   element={<Game />} />
         </Routes>
-
-        <h2 style={{ textAlign: 'center' }}>Recent Plays</h2>
-        <RecentPlays />
       </MainWrapper>
 
       {ENABLE_TROLLBOX && <TrollBox />}

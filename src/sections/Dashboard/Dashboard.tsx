@@ -28,11 +28,6 @@ const Grid = styled.div`
   @media (min-width: 600px) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  @media (min-width: 800px) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 `
 
@@ -52,7 +47,6 @@ export default function Dashboard() {
     <>
       <WelcomeBanner />
       <FeaturedInlineGame />
-      <h2 style={{ textAlign: 'center' }}>Games</h2>
       <GameGrid />
     </>
   )
