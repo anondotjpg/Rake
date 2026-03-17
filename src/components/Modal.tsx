@@ -49,7 +49,7 @@ const StyledModal = styled.div`
   right: 0;
   bottom: 0;
   transition: opacity linear 150ms;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
   z-index: 100;
   overflow-y: auto;
   height: 100vh;
