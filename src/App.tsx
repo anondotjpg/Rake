@@ -57,19 +57,6 @@ export default function App() {
 
   return (
     <>
-      {/* onboarding / ToS */}
-      {newcomer && (
-        <Modal>
-          <h1>Welcome</h1>
-          <TosWrapper>
-            <TosInner dangerouslySetInnerHTML={{ __html: TOS_HTML }} />
-          </TosWrapper>
-          <p>By playing on our platform, you confirm your compliance.</p>
-          <GambaUi.Button main onClick={() => set({ newcomer: false })}>
-            Acknowledge
-          </GambaUi.Button>
-        </Modal>
-      )}
 
       <ScrollToTop />
       <ErrorHandler />
